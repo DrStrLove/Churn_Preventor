@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>RECOMMENDER UI</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <h1>Recommender Dashboard</h1>
+  <form action="/ingest/" method="post" enctype="multipart/form-data">
+    <label>Upload logs CSV:</label>
+    <input type="file" name="log_file"/>
+    <button type="submit">Ingest</button>
+  </form>
+  <hr/>
+  <form action="/recommend/" method="post">
+    <label>Session ID:</label>
+    <input type="text" name="session_id"/>
+    <button type="submit">Get Recommendation</button>
+  </form>
+  <hr/>
+  <a href="/download/actions.csv" target="_blank">Download last recommendations (CSV)</a>
+</body>
+</html>
