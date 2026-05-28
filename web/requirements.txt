@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy[aio]
+asyncpg
+Jinja2
+pandas
+joblib
+hmmlearn
+d3rlpy
+scikit-learn
+python-multipart
+aiofiles
